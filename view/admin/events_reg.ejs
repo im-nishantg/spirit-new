@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <nav class=" navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/admin/admin_home/events" class="nav-link">Events</a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admin/admin_home" class="nav-link">Registrations</a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="/admin/logout" class="btn btn-sm btn-danger float-end">log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pre-event-tab" data-bs-toggle="tab" data-bs-target="#pre-event"
+                type="button" role="tab" aria-controls="pre-event" aria-selected="true"> Pre-events</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="Rhetorica-tab" data-bs-toggle="tab" data-bs-target="#Rhetorica" type="button"
+                role="tab" aria-controls="Rhetorica" aria-selected="false"> Rhetorica</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="Scientific-tab" data-bs-toggle="tab" data-bs-target="#Scientific" type="button"
+                role="tab" aria-controls="Scientific" aria-selected="false">Scientific Events</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="Magna-Carta-tab" data-bs-toggle="tab" data-bs-target="#Magna-Carta" type="button"
+                role="tab" aria-controls="Magna-Carta" aria-selected="false">Magna Carta</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="pre-event" role="tabpanel" aria-labelledby="pre-event-tab">
+            <h3 class="text-center m-3 eve-heading">Treasure Hunt</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td> item.name </td>
+                        <td>item.email </td>
+                        <td>item.phone </td>
+                        <td> item.year </td>
+                        <td> item.whatsapp </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <h3 class="text-center eve-heading">Meme Competitions</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <th scope="row">1</th>
+                        <td> item.name </td>
+                        <td>item.email </td>
+                        <td>item.phone </td>
+                        <td> item.year </td>
+                        <td> item.whatsapp </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- <h3 class="text-center eve-heading">Events 3</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <th scope="row">1</th>
+                        <td>item.name</td>
+                        <td>item.email %></td>
+                        <td>item.phone %></td>
+                        <td>item.year %></td>
+                        <td>item.whatsapp %></td>
+
+                    </tr>
+
+                </tbody>
+            </table> -->
+
+        </div>
+
+
+        <div class="tab-pane fade" id="Rhetorica" role="tabpanel" aria-labelledby="Rhetorica-tab">
+            <h3 class="text-center eve-heading">VECTOR: Quizzes & Challenges</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% rhetorica.forEach((item)=>{ %>
+                        <% if(item.subevent=="VECTOR: Quizzes & Challenges" ) { %>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <%= item.name %>
+                                </td>
+                                <td>
+                                    <%= item.email %>
+                                </td>
+                                <td>
+                                    <%= item.phone %>
+                                </td>
+                                <td>
+                                    <%= item.whatsapp %>
+                                </td>
+                                <td>
+                                    <%= item.college %>
+                                </td>
+
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                </tbody>
+            </table>
+            <h3 class="text-center eve-heading">SYNECTICS: Case Study Competitions</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% rhetorica.forEach((item)=>{ %>
+                        <% if(item.subevent=="SYNECTICS: Case Study Competitions" ) { %>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <%= item.name %>
+                                </td>
+                                <td>
+                                    <%= item.email %>
+                                </td>
+                                <td>
+                                    <%= item.phone %>
+                                </td>
+                                <td>
+                                    <%= item.whatsapp %>
+                                </td>
+                                <td>
+                                    <%= item.college %>
+                                </td>
+
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                </tbody>
+            </table>
+
+            <h3 class="text-center eve-heading">IGNITED MINDs: Debates</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% rhetorica.forEach((item)=>{ %>
+                        <% if(item.subevent=="IGNITED MINDs: Debates" ) { %>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <%= item.name %>
+                                </td>
+                                <td>
+                                    <%= item.email %>
+                                </td>
+                                <td>
+                                    <%= item.phone %>
+                                </td>
+                                <td>
+                                    <%= item.whatsapp %>
+                                </td>
+                                <td>
+                                    <%= item.college %>
+                                </td>
+
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="Scientific" role="tabpanel" aria-labelledby="Scientific-tab">
+            
+                <h3 class="text-center eve-heading">Polaris: PG Poster Presentation</h3>
+
+                <table class="table table-bordered">
+                    <thead>
+
+
+
+                        <tr>
+                            <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        <% scientific.forEach((item)=>{ %>
+                        <% if(item.subevent=="Polaris: PG Poster Presentation" ) { %>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <%= item.name %>
+                                </td>
+                                <td>
+                                    <%= item.email %>
+                                </td>
+                                <td>
+                                    <%= item.phone %>
+                                </td>
+                                <td>
+                                    <%= item.whatsapp %>
+                                </td>
+                                <td>
+                                    <%= item.college %>
+                                </td>
+
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                    </tbody>
+                </table>
+                <h3 class="text-center eve-heading">Agnitio: UG Poster Presentation</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% scientific.forEach((item)=>{ %>
+                            <% if(item.subevent=="Agnitio: UG Poster Presentation" ) { %>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <%= item.name %>
+                                    </td>
+                                    <td>
+                                        <%= item.email %>
+                                    </td>
+                                    <td>
+                                        <%= item.phone %>
+                                    </td>
+                                    <td>
+                                        <%= item.whatsapp %>
+                                    </td>
+                                    <td>
+                                        <%= item.college %>
+                                    </td>
+    
+                                </tr>
+                                <% } %>
+                                <% }) %>
+                    </tbody>
+                </table>
+
+                <h3 class="text-center eve-heading">Fabrica: Model Making</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% scientific.forEach((item)=>{ %>
+                            <% if(item.subevent=="Fabrica: Model Making" ) { %>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <%= item.name %>
+                                    </td>
+                                    <td>
+                                        <%= item.email %>
+                                    </td>
+                                    <td>
+                                        <%= item.phone %>
+                                    </td>
+                                    <td>
+                                        <%= item.whatsapp %>
+                                    </td>
+                                    <td>
+                                        <%= item.college %>
+                                    </td>
+    
+                                </tr>
+                                <% } %>
+                                <% }) %>
+                    </tbody>
+                </table>
+
+                
+        </div>
+        <div class="tab-pane fade" id="Magna-Carta" role="tabpanel" aria-labelledby="Magna-Carta-tab">
+            <h3 class="text-center eve-heading">Impulse: Group discussion</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% magnacarta.forEach((item)=>{ %>
+                        <% if(item.subevent=="Impulse: Group discussion" ) { %>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <%= item.name %>
+                                </td>
+                                <td>
+                                    <%= item.email %>
+                                </td>
+                                <td>
+                                    <%= item.phone %>
+                                </td>
+                                <td>
+                                    <%= item.whatsapp %>
+                                </td>
+                                <td>
+                                    <%= item.college %>
+                                </td>
+
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                </tbody>
+            </table>
+            <h3 class="text-center eve-heading">PharmaMarthon : A Business Plan</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone No.</th>
+                        <th scope="col">Whatsapp No.</th>
+                        <th scope="col">College</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                        <% magnacarta.forEach((item)=>{ %>
+                            <% if(item.subevent=="PharmaMarthon : A Business Plan" ) { %>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <%= item.name %>
+                                    </td>
+                                    <td>
+                                        <%= item.email %>
+                                    </td>
+                                    <td>
+                                        <%= item.phone %>
+                                    </td>
+                                    <td>
+                                        <%= item.whatsapp %>
+                                    </td>
+                                    <td>
+                                        <%= item.college %>
+                                    </td>
+    
+                                </tr>
+                                <% } %>
+                                <% }) %>
+                   
+                </tbody>
+            </table>
+
+            <!-- <h3 class="text-center eve-heading">Events 3</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">College</th>
+                        <th scope="col">Sub-events</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </div>
+    </div>
+
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+          
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto Slab', serif;
+        }
+        .nav-tabs .nav-item .active {
+            background-color: green;
+            color: white;
+            border-radius: 20px !important;
+        }
+        .eve-heading{
+            color:green;
+        }
+    </style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/all.js"></script>
+</body>
+
+</html>

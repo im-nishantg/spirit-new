@@ -1,0 +1,81 @@
+<!-- header -->
+<%- include ('../partials/header.ejs') %>
+    <!-- navbar -->
+    <nav>
+        <a href="/" style="margin:5px 10px; text-decoration:none; color:#00b9ce;
+        font-size:25px;"><i class="fa-solid fa-house"></i> Home</a>
+    </nav>
+
+
+        <!-- drop your code here 👇👇👇👇-->
+
+        <!-- for true state -->
+        
+        <!-- for false state -->
+      
+        <% var messages %>
+        <% var state %>
+        <% if(state==true){%>
+            <div class="error_box">
+                <div class="err-msg-box">
+                    <p class="err-msg t"><%- messages %></p>
+                    <a  onclick="history.back()" type="button" class="btn btn-sm btn-success">Go back</a>
+                </div>
+            </div>
+        <% }else{ %>
+            <div class="error_box">
+                <div class="err-msg-box">
+                    <h4>Oops!</h4>
+                    <p class="err-msg f"><%- messages %></p>
+                    <a type="button"  class="btn btn-sm btn-danger" onclick="history.back()">Go back</a>
+                </div>
+            </div>
+    
+        <% } %>
+
+     
+    
+        
+       
+      <style>
+        .error_box{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: #003459;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .err-msg-box{
+            display: flex;
+            padding: 5px 8px;
+            margin: 5px 10px;
+            height: 200px;
+            background-color: #FFF2F2;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-top: 10px solid #007ea7 ;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .err-msg{
+            font-size: 15px;
+            padding: 3px 8px;
+            text-align: center;
+           
+
+        }
+        .t{
+            color: green;
+        }
+        .f{
+            color: red;
+        }
+      </style>
+
+<script src="/js/all.js"></script>
+</body>
+</html>
+      

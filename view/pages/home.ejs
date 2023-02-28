@@ -1,0 +1,138 @@
+<!-- header -->
+<%- include ('../partials/header.ejs') %>
+    <!-- navbar -->
+    <%- include('../partials/navbar.ejs') %>
+
+        <!-- drop your code here 👇👇👇👇-->
+
+        <!-- ******************************* carousel ********************************* -->
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="box">
+                        <img src="/image/carousel_images/cr11.png" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="box">
+                        <img src="image/carousel_images/2_20230131_010944_0001.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- ************** About Section ******************** -->
+
+        <section id="about">
+            <h1 class="section-title mb-5 mt-3 w-100 text-center"> About Spirit </h1>
+
+            <div class="about-container justify-content-center ">
+                <!-- https://www.youtube.com/embed/hhf6Iw1VyRs -->
+                <div class="about-video video-margin-top">
+                    <video poster="/image/gallery/gallery_banner.png" controls >
+                        <source src="/videos/spirit23.mp4" >
+                    </video>
+                </div>
+               
+                <div class="about-text mt-5">
+
+                    <p class="">Spirit is the annual techno-pharma festival of IIT (BHU) Varanasi, organised by the
+                        student body
+                        of Pharmaceutical Engineering and Technology, Indian Institute of Technology (Banaras Hindu
+                        Unversity)
+                        Varanasi, India.
+
+                        It is a conclave of multidisciplinary life sciences competitions, events, workshops, panel
+                        discussions,
+                        keynotes, fostering the future of healthcare in India. We have witnessed a footfall of more than
+                        5000+
+                        enthusiasts from various institutions across India in our previous edition.
+
+                        In its glorious history of 10 years it has grown to be one of the largest and most awaited
+                        techno-pharmaceutical fest of the country.
+                        So, steady the
+                        sails and dive into the divinity, an everlasting journey to the world of wits and innovation of
+                        health tech.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- dummy -->
+
+
+        <!-- ******************** Event section ******************* -->
+        <section id="events">
+            <h1 class="text-center section-title mb-5"> Events </h1>
+            <div class="events-container d-flex flex-wrap w-100 ">
+
+
+                <div class="event-card text-center mb-5">
+                    <div class="event-img-box">
+                        <img src="image/event_img/rhetorica/magna carta2.png" alt="" srcset="" class="w-100">
+                    </div>
+                    <div class="event-title mt-5">
+                        Rheoterica
+                    </div>
+                    <div class="event-text  mt-3 ps-3 pe-2">
+                        <p>Are you looking for an exciting and unique way to learn about life sciences? By attending
+                            these events, you may gain a deeper understanding of it while also being
+                            entertained and engaged.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card text-center mb-5">
+                    <div class="event-img-box">
+                        <img src="image/event_img/scientific events/Polaris.png" alt="" srcset="" class="w-100">
+                    </div>
+                    <div class="event-title mt-5">
+                        Scientific events
+                    </div>
+                    <div class="event-text mt-3 ps-3 pe-2">
+                        <p>Join us for a journey of scientific discovery as we uncover the secrets of life and its
+                            impact on our planet.
+                            Get ready to be inspired and amazed as we explore the wonders of life
+                            sciences!
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card text-center mb-5">
+                    <div class="event-img-box">
+                        <img src="image/event_img/magna carta/impulse.jpeg" alt="" srcset="" class="w-100">
+                    </div>
+                    <div class="event-title mt-5">
+                        Magna Carta
+                    </div>
+                    <div class="event-text  mt-3 ps-3 pe-2">
+                        <p>Magna Carta is an individual participation event that lets you elaborate and educate your
+                            opinion to others on contemporary issues of the pharmaceutical realm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <a href="/events" type="button" class=" btn  " id="btn-explore">Explore</a>
+
+            </div>
+        </section>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>

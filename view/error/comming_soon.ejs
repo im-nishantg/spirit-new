@@ -1,0 +1,68 @@
+<%- include ('../partials/header.ejs') %>
+
+    <nav>
+        <a href="/" style="margin:5px 10px; text-decoration:none; color:#00b9ce;
+        font-size:25px;"><i class="fa-solid fa-house"></i> Home</a>
+    </nav>
+    <div class="container1">
+        <div class="main">
+         
+            <h1 class="one">
+                Coming Soon
+            </h1>
+        </div>
+    </div>
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .main h2 {
+            font-size: 30px;
+            color: orange;
+            text-shadow: 2px 3px 3px rgb(12, 12, 12);
+            padding: 0;
+            font-weight: 700;
+        }
+
+        .main p {
+            font-size: 18px;
+            color: white;
+            letter-spacing: 1.2px;
+        }
+
+
+        .one {
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 5px;
+            color: rgb(0, 213, 255);
+            animation-name: magic;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes magic {
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        
+    </style>
+    <script src="/js/all.js"></script>
+    </body>
+
+    </html>

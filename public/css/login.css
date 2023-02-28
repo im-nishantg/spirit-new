@@ -1,0 +1,197 @@
+/* footer design */
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaina+2:wght@400;500&family=Knewave&family=Merriweather:wght@300;400&family=PT+Serif&family=Varela+Round&display=swap'); */
+
+/* 
+font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Bhaina 2', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Varela Round', sans-serif;
+font-family: 'Knewave', cursive;
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+   
+
+}
+
+.login_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /* background:url("/image/reg_back.jpg")no-repeat center center/cover; */
+
+    /* background-color: rgb(14, 63, 63); */
+}
+
+.login_container .layer{
+    width: 100%;
+    height: 100%;
+    /* background-color:rgba(55, 55, 79, 0.872); */
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login_container .layer .log_main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.log_main .log_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+/* .log_main .log_1 .text{
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 18px;
+    color: antiquewhite;
+} */
+
+/* .log_main .link{
+    color:cyan;
+} */
+
+.log_main a{
+    color:rgb(2, 124, 255);
+    text-decoration: none;
+}
+.head{
+    color:black;
+    text-align: center;
+    /* font-size: 20px; */
+    /* font-weight: 600; */
+}
+.log_main .log_form{
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* padding: 5px 20px; */
+    border-radius: 4px;
+    border-top: 7px solid #007ea7;
+    /* margin: 10px 2px; */
+    /* width: 80%; */
+
+}
+
+.log_form .form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.log_form .form form{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.log_form .form_elm{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 2px;
+    width: 90%;
+}
+
+.log_form .form_elm #togglePassword{
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.log_form .form_elm label{
+    color: black;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.log_form .form_elm input{
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;    /* border: 1.5px solid #7286D3; */
+    border:none;
+    border-radius: 4px;
+    padding: 2px 10px;
+    /* margin: 4px; */
+    /* font-size: 13px; */
+    color: black;
+    background: transparent;
+    border: 1px solid grey;
+    /* border-bottom: 1.5px solid black; */
+    /* border-color: black; */
+}
+
+#log_submit{
+    background:#007ea7;
+    transition: .4s all ease-out;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 4px 5px;
+    
+   }
+
+#log_submit:hover{
+
+   
+
+    background:#00688a;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.bottom-text{
+
+    font-size: 13px;
+
+}
+
+/* responsive */
+
+@media screen and (max-width: 793px) {
+
+    .login_containe{
+        height: auto;
+    }
+    .log_main .log_1 .text{
+        padding: 0px 4px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+
+    .login_container .layer .log_main{
+        flex-direction: column;
+    }
+    .log_main .log_form{
+        width: 90%;
+    }
+
+
+}
+
+
+

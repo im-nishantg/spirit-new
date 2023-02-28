@@ -1,0 +1,14 @@
+#sponsors {
+
+    background: #CCE4FF;
+    background: -webkit-linear-gradient(top left, #CCE4FF, #6AAFDD);
+    background: -moz-linear-gradient(top left, #CCE4FF, #6AAFDD);
+    background: linear-gradient(to bottom right, #CCE4FF, #6AAFDD);
+    width: 100%;
+}
+
+.t {
+    height: 175px;
+    /* border: 1px solid black; */
+    /* padding: 4% !important; */
+}

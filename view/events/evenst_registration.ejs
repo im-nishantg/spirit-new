@@ -1,0 +1,166 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for this events!</title>
+</head>
+<body>
+    <% var data %>
+   <form method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="<%= data.name %>">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" value="<%= data.email %>">
+    <br>
+    <label for="college">college</label>
+    <input type="text" name="college" id="college" value="<%= data.college %>">
+    <br>
+    <label for="phone">phone number</label>
+    <input type="tel" name="phone" id="phone" value="<%= data.phone %>">
+    <br>
+    <label for="year">Year</label>
+    <input type="text" name="year" id="year" value="<%= data.year %>">
+    <br>
+    <label for="city">city</label>
+    <input type="text" name="city" id="city" value="<%= data.city %>">
+    <br>
+    <label for="events">Event</label>
+    <input type="text" name="events" id="events" required>
+    <br>
+    <input type="submit" name="submit" id="submit" value="submit">
+
+
+
+   </form> 
+</body>
+</html> -->
+
+<!-- header -->
+
+<!-- navbar -->
+
+
+<!-- drop your code here 👇👇👇👇-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/events_css/reg_event.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <title>Register for this events!</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/" style="margin:5px 10px; text-decoration:none; color:#00b9ce;
+        font-size:25px;"><i class="fa-solid fa-house"></i> Home</a>
+    </nav>
+    <% var data %>
+        <div class="registration">
+            <div class="reg_layer">
+                <div class="main">
+                    <div class="form_content main_form">
+
+
+                        <!-- <h4 class="intro_text">Register here</h4> -->
+
+                        <div class="form">
+                            <div class="logo">
+                                <img src="/image/logo_dark.png" alt="spirit'23">
+                            </div>
+                            <h3>Sign up with credentials</h3>
+                            <form method="post">
+
+                                <div class="form_elm">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" readonly value="<%=data.name%> <%=data.lname%>">
+                                </div>
+
+                                <div class="form_elm">
+                                    <label for="email">Email id</label>
+                                    <input type="email" name="email" autocomplete="off" id="email" readonly
+                                        value="<%=data.email%>">
+                                </div>
+                                <div class="form_elm">
+                                    <label for="phone">Contact number</label>
+                                    <input type="tel" name="phone" id="phone" readonly value="<%=data.phone%>">
+                                </div>
+                                <div class="form_elm">
+                                    <label for="whatsapp">Whatsapp number</label>
+                                    <input type="tel" name="whatsapp" id="whatsapp" readonly value="<%=data.whatsapp%>">
+                                </div>
+                                <div class="form_elm">
+                                    <label for="college">College name</label>
+                                    <input type="text" name="college" id="college" readonly value="<%=data.college%>">
+                                </div>
+                                <div class="form_elm">
+                                    <label for="year">Year</label>
+                                    <input type="text" name="year" id="year" readonly value="<%=data.year%>">
+                                </div>
+                                <div class="form_elm">
+                                    <label for="">Events</label>
+                                    <select name="select1" id="select1" onchange="populate(this.id,'select2')" required>
+                                        <option value="">--choose events---</option>
+                                        <option value="Scientific">SCIENTIFIC EVENTS</option>
+                                        <option value="Rhetorica">Rhetorica Events</option>
+                                        <option value="Magna-Carta">Magna-Carta</option>
+                                    </select>
+
+                                </div>
+                                <div class="form_elm">
+                                    <label for="">Subevents</label>
+                                    <select name="select2" id="select2" required>
+                                        
+                                    </select>
+
+                                </div>
+                                <div class="form_elm">
+                                    <button type="submit" id="submit">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="/js/all.js"></script> -->
+        <script src="/js/all.js"></script>
+        <script src="/js/bootstrap.bundle.js"></script>
+        <script>
+           function populate(s1,s2){
+            var s1=document.getElementById(s1);
+            var s2=document.getElementById(s2);
+
+            s2.innerHTML="";
+            if(s1.value=="Scientific"){
+                var optionArray=["Polaris|Polaris: PG Poster Presentation","Agnitio| Agnitio: UG Poster Presentation","Fabrica|Fabrica: Model Making"];
+            }
+            else if(s1.value=="Rhetorica"){
+                var optionArray=["VECTOR|VECTOR: Quizzes & Challenges","SYNECTICS|SYNECTICS: Case Study Competitions","IGNITED MINDs|IGNITED MINDs: Debates"];
+            }
+            else if(s1.value=="Magna-Carta"){
+                var optionArray=["Impulse|Impulse: Group discussion","PharmaMarthon|PharmaMarthon : A Business Plan"];
+
+            }
+
+            for(var option in optionArray){
+                var pair=optionArray[option].split("|");
+                var newoption=document.createElement("option");
+
+                newoption.value=pair[1];
+                newoption.innerHTML=pair[1];
+                s2.options.add(newoption);
+            }
+           }
+        </script>
+
+</body>
+
+</html>

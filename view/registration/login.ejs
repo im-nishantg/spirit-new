@@ -1,0 +1,84 @@
+<!-- header -->
+<%- include ('../partials/header.ejs') %>
+    <!-- navbar -->
+    <nav>
+
+       
+        <a href="/" style="margin:5px 10px; text-decoration:none; color:#00b9ce;
+
+        font-size:25px;"><i class="fa-solid fa-house"></i> Home</a>
+    </nav>
+
+        <!-- drop your code here 👇👇👇👇-->
+       
+                    <div class="login_container">
+                        <div class="layer">
+                            <div class="log_main">
+                                <!-- <div class="log_1">
+                                    <h2 class="welcome" style="color: rgb(255, 111, 0);">Welcome back!</h2>
+                                    <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+                                        ipsa voluptates, sed alias impedit eius?</div>
+                                    <p class="link">Don't have an account? <a href="/registration">Signup now</a></p>
+
+                                </div> -->
+                                <div class="log_form">
+                                    <div class="logo mt-3">
+                                        <img src="/image/logo_dark.png" alt="spirit'23">
+                                    </div>
+                                    <p class="head mt-3 mb-4">Login with credentials</p>
+                                    <div class="form">
+                                        <form method="post">
+                                            <div class="form_elm">
+                                                <label for="email" class="mb-2">Email id/Username</label>
+                                                <input type="email" name="email" id="email" required>
+                                            </div>
+                                            <div class="form_elm">
+                                                <!-- <i class="fa-solid fa-eye" id="togglePassword"></i> -->
+                                                <!-- <i class='bx bxs-low-vision'
+                                                        id="togglePassword"></i> -->
+                                                <label for="password" class="mb-2">Password</label>
+                                                <input type="password" name="password" id="password" minlength="8"
+                                                    required>
+                                            </div>
+                                            <div class="form_elm mt-2">
+                                                <button type="submit" id="log_submit">Login</button>
+                                            </div>
+                                            <div class="form_elm bottom-text">
+                                                <p><a href="/forgetpassword">forgot password?</a></p>
+                                                <p>New here? <a href="/registration">Sign up </a>now</p>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- footer -->
+                    </body>
+
+                    </html>
+
+                    <script src="/js/all.js"></script>
+                    <script>
+                        
+                        const togglePassword = document.querySelector("#togglePassword");
+                        const password = document.querySelector("#password");
+
+                        togglePassword.addEventListener("click", function () {
+                            // toggle the type attribute
+                            console.log('clicked')
+                            const type = password.getAttribute("type") === "password" ? "text" : "password";
+                            password.setAttribute("type", type);
+
+                            // toggle the icon
+                          //  this.classList.toggle("fa-eye-slash");
+                        });
+
+
+
+                    </script>

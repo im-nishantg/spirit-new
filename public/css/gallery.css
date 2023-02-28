@@ -1,0 +1,248 @@
+/* put css file here */
+
+.heading-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* top: 10vw; */
+    /* margin-top:20px; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.heading-gallery{
+    text-align: center;
+    font-weight: 600;
+    color: #00b4d8;
+}
+.heading-gallery span{
+    color: #00b4d8;
+}
+.heading-img span{
+
+    color: rgb(213, 14, 14);
+  
+}
+
+.img-gallery{
+    width: 85%;
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    filter: none;
+    transition:.5s all ease-out;
+    border: 3px solid white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.img-gallery img:hover{
+    box-shadow: 0px 0px 8px 5px rgb(11, 255, 255);
+    transform: translateY(-10px);
+    /*border-radius: 30%;*/
+    border-color: #007ea7;
+    /* filter:grayscale(100%); */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+
+
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img{
+    width: 90%;
+    max-width: 800px;
+   border: 3px solid white;
+   overflow: hidden;
+
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* suraj */
+/*************************************** gallery button css*********************************/
+.gallery-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    margin-top: -50px;
+}
+
+.gallery-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px 10px;
+    width:250px ;
+    text-align: center;
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3px;
+
+   
+}
+.gallery-btn a{
+    text-decoration: none;
+}
+
+.gallery-btn-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 170px;
+    border: 7px solid white;
+    border-bottom: none !important;
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.gallery-btn-img:hover{
+    filter:contrast(180%);
+}
+#btn-img-1{background: url("/image/gallery/spirit_2017.jpg") no-repeat center center/cover;}
+#btn-img-2{background: url("/image/gallery/spirit_2018.jpg") no-repeat center center/cover;}
+#btn-img-3{background: url("/image/gallery/spirit_2019.jpg") no-repeat center center/cover;}
+.img-description{
+    font-weight: 600;
+    opacity: .8;
+    text-transform: uppercase;
+}
+              
+.description_txt{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 810px){
+.gallery-btn-container{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.gallery-btn-img{
+   display: none;
+  
+}
+.gallery-btn{
+    width: 25vw;
+    background-color: #00b4d8;
+    color: white;
+    border-radius: 10px;
+    
+}
+.description_txt{
+   display: none;
+}
+.heading-img{
+    font-size: 13px;
+    color:white !important;
+
+}
+#text-color{
+    font-size: 13px;
+    font-weight:400 ;
+   
+}
+
+
+}
+
+/************************* main image container css ****************/
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    background: url("/image/gallery/gallery_banner.png") no-repeat center center/cover;
+}
+
+.image-layer {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.intro-text {
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#text-color {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    width: 60%;
+}
+
+.image-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    
+    .image-container{
+
+        height: 350px;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .image-container{
+
+        height: 220px;
+    }
+}
