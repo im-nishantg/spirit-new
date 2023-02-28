@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 class event_handler {
   static my_event = (req, res) => {
-    res.render("events/event", { title: "Upcoming events!", messages: "" });
+    res.render("events/event", { title: "Spirit 23 | Events", messages: "" });
     // console.log(req.cookies.spirit);
   };
 

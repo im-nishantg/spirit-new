@@ -16,27 +16,27 @@ import enrolled_user_model from '../model/enrolled_user.js';
 
 class home_event {
     static My_home = (req, res) => {
-        res.render('pages/home', { 'title': 'Home' });
+        res.render('pages/home', { 'title': 'Spirit 23 | Home' });
     }
     static My_gallery = (req, res) => {
-        res.render('pages/gallery', { 'title': 'Gallery' })
+        res.render('pages/gallery', { 'title': 'Spirit 23 | Gallery' })
     }
 
     static My_login = (req, res) => {
-        res.render('registration/login', { 'title': 'login here' })
+        res.render('registration/login', { 'title': 'Spirit 23 | Log in' })
     }
     static My_registration = (req, res) => {
-        res.render('registration/registration', { 'title': 'Registration| Spirit23' })
+        res.render('registration/registration', { 'title': 'Spirit 23 | Registration' })
     }
 
     static speakers = (req, res) => {
-        res.render('pages/speakers', { 'title': 'Speakers | Spirit23' });
+        res.render('pages/speakers', { 'title': 'Spirit 23 | Speakers ' });
     }
     static about = (req, res) => {
         res.render('pages/about', { 'title': 'About us| Spirit23' })
     }
     static sponsors = (req, res) => {
-        res.render('pages/sponsors', { 'title': 'Sponsors| Spirit23' });
+        res.render('pages/sponsors', { 'title': 'Spirit23 | Sponsors' });
     }
 
     static forgetPassword = (req, res) => {
