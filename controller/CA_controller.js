@@ -2,6 +2,7 @@ import ca_model from "../model/ca_details.js";
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import client_model from "../model/cliend_model.js";
+import crypto from 'crypto';
 // import ca_model from "../model/ca_details.js";
 
 
@@ -11,6 +12,12 @@ class creatCA{
     }
     static CA_Details=async(req,res)=>{
         try{
+            // crypto.randomInt(0, 1000000, (err, n) => {
+            //     if (err) throw err;
+                
+            //     const verificationCode = n.toString().padStart(6, "0");
+            //     console.log(verificationCode);
+            // });
             const {name,lname,email,phone,gender,college,year,whatsapp,address,code,question}=req.body;
             const hashPassword = await bcrypt.hash(req.body.password, 10);
             const CA= await ca_model.findOne({email:email});
@@ -33,7 +40,8 @@ class creatCA{
                     whatsapp:whatsapp,
                     address:address,
                     code:code,
-                    question:question
+                    question:question,
+                    SpiritID:"SP"+Math.floor(Math.random() * 899999 + 100000)
                 })
 
                 const result= await ca_Doc.save();
