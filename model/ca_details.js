@@ -1,5 +1,13 @@
 import mongoose from "mongoose";
 import  jwt  from "jsonwebtoken";
+import crypto from 'crypto';
+
+// const n = crypto.randomInt(0, 1000000);
+// console.log(n);
+// var idca;
+
+
+
 
 const caSchema= new mongoose.Schema({
     name:{type:String, require:true, trim:true},
@@ -14,7 +22,7 @@ const caSchema= new mongoose.Schema({
     code:{type:Number},
     password:{type:String,require:true, trim:true},
     question:{type:String, require:true},
-    SpiritID:{type:String, default:'SP'+Math.random().toString().substr(2, 6)},//Date.now().toString(36)
+    SpiritID:{type:String},//Date.now().toString(36)  //.substr(2, 6)
     tokens:[
         {
             token:{
