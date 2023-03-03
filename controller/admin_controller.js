@@ -2,6 +2,8 @@ import client_model from "../model/cliend_model.js";
 import data_collector from "./client_controller.js";
 import bcrypt from 'bcrypt';
 import enrolled_user_model from "../model/enrolled_user.js";
+import ca_model from "../model/ca_details.js";
+
 // import jwt from 'jsonwebtoken';
 
 
@@ -55,13 +57,15 @@ static admin_verify=async(req,res)=>{
 static adminHome=async(req,res)=>{
     try{ 
         const all_result= await client_model.find();
+        const ca_data=await ca_model.find();
 
-        res.render('admin/admin',{data:all_result});
+        res.render('admin/admin',{data:all_result, ca_data:ca_data});
     }catch(error){
         console.log(error);
         
     }
 }
+
 
 static events_reg= async(req,res)=>{
     try{
@@ -75,6 +79,7 @@ static events_reg= async(req,res)=>{
         
     }
 }
+
 
 
 static admin_logout= async(req,res)=>{

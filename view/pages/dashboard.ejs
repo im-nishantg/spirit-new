@@ -28,11 +28,11 @@
                         <a class="nav-link active" target="_blank" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                        <a class="nav-link active" aria-current="page" href="/events">Register for the Events</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#payment">Payment</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link active text-danger fw-bold" href="/logout">Logout</a>
                     </li>
@@ -57,8 +57,7 @@
             <div class="card-body">
                 <!-- alert box -->
                 <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-                    <p class="mb-0"><span style="font-weight: bold;">!Important</span> You can only register for a
-                        maximum of three events.
+                    <p class="mb-0"><span style="font-weight: bold;">Important ! </span> You can only register for three events at a time. 
                         If in case there are more,<span style="font-weight: bold;"> top three will be considered. </span></p>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -102,15 +101,15 @@
                 <h3 class="text-center dash_head">Payment</h3>
             </div>
             <div class="card-body">
-                <div class="container card mb-4 pb-3 dash_pay_contain" style=" box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px">
-                <h1 class="card-title mb-3">The payment portal is <span style="color:green">live </span>now!</h1>
+                <div class="container card mb-5 p-5 dash_pay_contain" style=" box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px">
+                <h1 class="card-title mb-5">The payment portal is <span style="color:green">live </span>now!</h1>
                     <div class="alert alert-success" role="alert">
     
-                        <p>You need to buy the Spirit events ticket 🎟️ to register and participate in all events.</p>
+                        <p>You need to buy the Spirit event ticket to register and participate in all events.</p>
                         <hr>
-                        <p class="mb-0">If you have already bought the events ticket, it should be confirmed from our end within a day!</p>
+                        <p class="mb-0">If you have already bought the event ticket, it should be confirmed from our end within a day!</p>
                     </div>
-                    <h5 class="alert alert-danger card-text"><span style="font-weight: bold;">Important!</span>Please provide the same email Id during payment as it was at the time of registration.</h5>
+                    <h5 class="alert alert-danger card-text"><span style="font-weight: bold;">Important ! </span>Please provide the same email ID during the payment that was used at the time of registration.</h5>
                     
                 </div>
                     <a href="/payments" class="btn btn-success">Buy Ticket</a>
@@ -128,6 +127,14 @@
             .dash_pay_contain{
                 max-width: 720px;
             } 
+        }
+
+        @media (max-width: 600px) {
+
+            .dash_pay_contain{
+
+                padding: 30px 8px !important;
+            }
         }
     </style>
 
