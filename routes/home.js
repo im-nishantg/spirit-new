@@ -61,4 +61,8 @@ router.get('/ca_logout',authCA,creatCA.CA_logout)
 
 router.get('/caDashboard',authCA,creatCA.caDashboard);
 
+// our team
+
+router.get('/our-team',home_event.our_team);
+
 export default router;
