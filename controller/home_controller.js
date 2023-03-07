@@ -35,6 +35,9 @@ class home_event {
     static about = (req, res) => {
         res.render('pages/about', { 'title': 'About us| Spirit23' })
     }
+    static our_team = (req, res) => {
+        res.render('pages/our_team', { 'title': 'Our Team | Spirit23' })
+    }
     static sponsors = (req, res) => {
         res.render('pages/sponsors', { 'title': 'Spirit23 | Sponsors' });
     }
