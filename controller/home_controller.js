@@ -16,7 +16,7 @@ import enrolled_user_model from '../model/enrolled_user.js';
 
 class home_event {
     static My_home = (req, res) => {
-        res.render('pages/home', { 'title': 'Spirit 23 | Home' });
+        res.render('pages/home', { 'title': 'Spirit 23 ' });
     }
     static My_gallery = (req, res) => {
         res.render('pages/gallery', { 'title': 'Spirit 23 | Gallery' })
