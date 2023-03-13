@@ -9,7 +9,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/all.css">
     <title>
-         Spirit'23 | Dashboard 
+        Spirit'23 | Dashboard
     </title>
 </head>
 
@@ -44,6 +44,8 @@
     <div class="container-fluid">
         <div class="card text-center dash_card">
 
+
+
             <div class="card-header" style="text-transform: uppercase;">
                 <div class="alert alert-light" role="alert" id="payment">
                     <h3 class="text-center dash_head">
@@ -54,11 +56,14 @@
 
             </div>
 
+
             <div class="card-body">
                 <!-- alert box -->
                 <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-                    <p class="mb-0"><span style="font-weight: bold;">Important ! </span> You can only register for three events at a time. 
-                        If in case there are more,<span style="font-weight: bold;"> top three will be considered. </span></p>
+                    <p class="mb-0"><span style="font-weight: bold;">Important ! </span> You can only register for three
+                        events at a time. 
+                        If in case there are more,<span style="font-weight: bold;"> top three will be considered.
+                        </span></p>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <!--  -->
@@ -100,19 +105,49 @@
             <div class="alert alert-light" role="alert" id="payment">
                 <h3 class="text-center dash_head">Payment</h3>
             </div>
+            <div class="card m-3 border border-danger rounded-1">
+                <h3 class=" text-white bg-danger card-header">Hurry up!</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Tickets prise going to be increase after...</h5>
+                    <div class="d-flex text-danger justify-content-center">
+                        <div>
+                            <h4 id="days" class=" ms-2">00:00</h4>
+                            <p class="ms-2">Day</p>
+                        </div>
+                        <div>
+                            <h4 id="hours" class=" ms-2">00:00</h4>
+                            <p class="ms-2">Hour</p>
+                        </div>
+                        <div>
+                            <h4 id="minutes" class=" ms-2">00:00</h4>
+                            <p class="ms-2">Minute</p>
+                        </div>
+                        <div>
+                            <h4 id="seconds" class=" ms-2">00:00</h4>
+                            <p class="ms-2">Second</p>
+                        </div>
+                    </div>
+                    <p class="card-text text-danger">Buy Tickets till 20 March, after that you have to pay additional
+                        200 rupees per Tickets.
+                    </p>
+                </div>
+            </div>
             <div class="card-body">
-                <div class="container card mb-5 p-5 dash_pay_contain" style=" box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px">
-                <h1 class="card-title mb-5">The payment portal is <span style="color:green">live </span>now!</h1>
+                <div class="container card mb-5 p-5 dash_pay_contain"
+                    style=" box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px">
+                    <h1 class="card-title mb-5">The payment portal is <span style="color:green">live </span>now!</h1>
                     <div class="alert alert-success" role="alert">
-    
+
                         <p>You need to buy the Spirit event ticket to register and participate in all events.</p>
                         <hr>
-                        <p class="mb-0">If you have already bought the event ticket, it should be confirmed from our end within a day!</p>
+                        <p class="mb-0">If you have already bought the event ticket, it should be confirmed from our end
+                            within a day!</p>
                     </div>
-                    <h5 class="alert alert-danger card-text"><span style="font-weight: bold;">Important ! </span>Please provide the same email ID during the payment that was used at the time of registration.</h5>
-                    
+                    <h5 class="alert alert-danger card-text"><span style="font-weight: bold;">Important ! </span>Please
+                        provide the same email ID during the payment that was used at the time of registration.</h5>
+
                 </div>
-                    <a href="/payments" class="btn btn-success">Buy Ticket</a>
+                <a href="/payments" class="btn btn-success">Buy Ticket</a>
             </div>
 
         </div>
@@ -123,15 +158,16 @@
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
             margin: 10px 2px;
         }
-        @media screen and (min-width:768px){
-            .dash_pay_contain{
+
+        @media screen and (min-width:768px) {
+            .dash_pay_contain {
                 max-width: 720px;
-            } 
+            }
         }
 
         @media (max-width: 600px) {
 
-            .dash_pay_contain{
+            .dash_pay_contain {
 
                 padding: 30px 8px !important;
             }
@@ -143,6 +179,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="/js/all.js"></script>
+    <script src="/js/count.js"></script>
 </body>
 
 </html>
