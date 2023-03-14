@@ -6,6 +6,7 @@ import creatCA from '../controller/CA_controller.js';
 import message from '../middleware/registration_mdw.js';
 import authCA from '../middleware/auth_CA.js';
 import auth_before from '../middleware/auth_before_everything.js';
+import event_handler from '../controller/event_controller.js';
 const router=express.Router();
 
 router.get('/',home_event.My_home);
@@ -45,6 +46,7 @@ router.post('/reset-password/:id/:token',home_event.savePassword);
 // user dashboard//
 
 router.get('/dashboard',authUser,home_event.client_dashboard);
+router.post('/dashboard/delete/:id',authUser,event_handler.delete_event);
 
 // router.post('create/orderId',home_event.creatOrer)
 // router.post('api/payment/verify',home_event.verifyOrder)
