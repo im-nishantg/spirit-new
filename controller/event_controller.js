@@ -61,6 +61,16 @@ class event_handler {
       console.log(error);
     }
   };
+
+  static delete_event= async( req,res)=>{
+    try {
+      const result = await enrolled_user_model.findByIdAndDelete(req.params.id);
+      res.redirect('/dashboard');
+  } catch (error) {
+      console.log(error);
+
+  }
+  }
 }
 
 export default event_handler;
