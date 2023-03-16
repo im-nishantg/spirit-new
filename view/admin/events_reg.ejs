@@ -163,10 +163,11 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% var i=1 %>
                     <% rhetorica.forEach((item)=>{ %>
                         <% if(item.subevent=="VECTOR: Quizzes & Challenges" ) { %>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row"><%- i++ %></th>
                                 <td>
                                     <%= item.name %>
                                 </td>
@@ -201,10 +202,11 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% var j=1 %>
                     <% rhetorica.forEach((item)=>{ %>
                         <% if(item.subevent=="SYNECTICS: Case Study Competitions" ) { %>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row"><%- j++ %></th>
                                 <td>
                                     <%= item.name %>
                                 </td>
@@ -240,10 +242,11 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% var k=1 %>
                     <% rhetorica.forEach((item)=>{ %>
                         <% if(item.subevent=="IGNITED MINDs: Debates" ) { %>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row"><%- k++ %></th>
                                 <td>
                                     <%= item.name %>
                                 </td>
@@ -287,10 +290,11 @@
                     </thead>
                     <tbody>
 
+                        <% var m=1 %>
                         <% scientific.forEach((item)=>{ %>
                         <% if(item.subevent=="Polaris: PG Poster Presentation" ) { %>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row"><%- m++ %></th>
                                 <td>
                                     <%= item.name %>
                                 </td>
@@ -325,10 +329,11 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <% var m=1 %>
                         <% scientific.forEach((item)=>{ %>
                             <% if(item.subevent=="Agnitio: UG Poster Presentation" ) { %>
                                 <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row"><%- m++ %></th>
                                     <td>
                                         <%= item.name %>
                                     </td>
@@ -364,10 +369,11 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <% var m=1 %>
                         <% scientific.forEach((item)=>{ %>
                             <% if(item.subevent=="Fabrica: Model Making" ) { %>
                                 <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row"><%- m++ %></th>
                                     <td>
                                         <%= item.name %>
                                     </td>
@@ -406,10 +412,11 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% var m=1 %>
                     <% magnacarta.forEach((item)=>{ %>
                         <% if(item.subevent=="Impulse: Group discussion" ) { %>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row"><%- m++ %></th>
                                 <td>
                                     <%= item.name %>
                                 </td>
@@ -444,11 +451,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                   
+                    <% var m=1 %>
                         <% magnacarta.forEach((item)=>{ %>
                             <% if(item.subevent=="PharmaMarthon : A Business Plan" ) { %>
                                 <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row"><%- m++ %></th>
                                     <td>
                                         <%= item.name %>
                                     </td>
