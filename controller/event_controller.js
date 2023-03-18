@@ -27,21 +27,26 @@ class event_handler {
       const verifyUser = jwt.verify(token, process.env.JWT_SECREAT_KEY);
       if (!verifyUser) {
         res.send("error 404");
-      } else {
-        const { name,email, select1, select2, phone, whatsapp, college, year } =
-          req.body;
+      } 
+      else {
+        const { name, email, select1, select2, phone, whatsapp, college, year } = req.body;
         // const id = verifyUser._id;
-        const email_=await enrolled_user_model.findOne({email:email})
-        const event_=await enrolled_user_model.findOne({subevent:select2})
+        console.log('this');
+        
+        console.log(email,select2);
+        
+        const email_ = await enrolled_user_model.findOne({ email: email })
+        const event_ = await enrolled_user_model.findOne({ subevent: select2 })
+        
+        if (email_ == true && event_ == true) {
 
-        if(email_ && event_){
-          let messages="Great! you are already registered for this event.";
-            res.render('error/greet', { 'title': `Events|Spirit23`, messages, state:true });
-            return;
+          let messages = "Great! you are already registered for this event.";
+          res.render('error/greet', { 'title': `Events|Spirit23`, messages, state: true });
+          // return;
         }
-        else{
+        else {
           const user_doc = new enrolled_user_model({
-            name:name,
+            name: name,
             email: email,
             event_name: select1,
             subevent: select2,
@@ -50,26 +55,26 @@ class event_handler {
             college: college,
             year: year,
           });
-  
+
           await user_doc.save();
           res.redirect('/dashboard');
         }
 
-        
+
       }
     } catch (error) {
       console.log(error);
     }
   };
 
-  static delete_event= async( req,res)=>{
+  static delete_event = async (req, res) => {
     try {
       const result = await enrolled_user_model.findByIdAndDelete(req.params.id);
       res.redirect('/dashboard');
-  } catch (error) {
+    } catch (error) {
       console.log(error);
 
-  }
+    }
   }
 }
 
