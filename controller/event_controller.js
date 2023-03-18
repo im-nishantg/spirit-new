@@ -31,9 +31,9 @@ class event_handler {
       else {
         const { name, email, select1, select2, phone, whatsapp, college, year } = req.body;
         // const id = verifyUser._id;
-        console.log('this');
+        // console.log('this');
         
-        console.log(email,select2);
+        // console.log(email,select2);
         
         const email_ = await enrolled_user_model.findOne({ email: email })
         const event_ = await enrolled_user_model.findOne({ subevent: select2 })
